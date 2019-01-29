@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Find a Friend</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="jumbo" class="jumbotron">
+            <h1 id="h1">No Need to be Lonely</h1>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-12">
+                <form id="form">
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Name">
+
+                    </div>
+
+            
+
+                </form>
+                <button id="btn" type="submit" class="btn btn-primary" id="btn">Find that Friend</button>
+
+                <form id="quiz">
+
+                    <label class="Q">Do you like to get schwifty?</label>
+                    <br>
+                    <div>
+                        <select class="form-control" id="question1">
+                            <option value="" selected disabled>Choose</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <label class="Q">Do you like Crazy Adventure?</label>
+                    <br>
+                    <div>
+                        <select class="form-control" id="question2">
+                            <option value="" selected disabled>Choose</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <label class="Q">Are you a total Jerry?</label>
+                    <br>
+
+                    <div>
+                        <select class="form-control" id="question3">
+                            <option value="" selected disabled>Choose</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <label class="Q">Are you a leader?</label>
+                    <br>
+                    <div>
+                        <select class="form-control" id="question4">
+                            <option value="" selected disabled>Choose</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <label class="Q">Are you a follower?</label>
+                    <br>
+                    <div>
+                        <select class="form-control" id="question5">
+                            <option value="" selected disabled>Choose</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <label class="Q">is Beth the greatest?.</label>
+                    <br>
+                    <div>
+                        <select class="form-control" id="question6">
+                            <option value="" selected disabled>Choose</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <label class="Q">Do you like Morty?</label>
+                    <br>
+                    <div>
+                        <select class="form-control" id="question7">
+                            <option value="" selected disabled>Choose</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <label class="Q">Do you like Rick?.</label>
+                    <br>
+                    <div>
+                        <select class="form-control" id="question8">
+                            <option value="" selected disabled>Choose</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <label class="Q">Should Jerry Move out?</label>
+                    <br>
+                    <div>
+                        <select class="form-control" id="question9">
+                            <option value="" selected disabled>Choose</option>
+                            <option value="" selected disabled>Choose</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <label class="Q">Was this a good quiz?</label>
+                    <br>
+                    <div>
+                        <select class="form-control" id="question10">
+                            <option value="" selected disabled>Choose</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <br>
+
+                </form>
+                <button type="submit" class="btn btn-primary" id="submitQuiz">Submit</button>
+                <button type="submit" class="btn btn" id="goBack">Go Back</button>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Your New Bromigo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">X</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+            body{
+                background-image: url("https://media.wired.com/photos/5b7f64cbbe2f8d3a624b77b2/4:3/w_2000,c_limit/SPoW_82318_01.jpg");
+            }
+            #jumbo
+             {
+                background-image: url("https://d1ic4altzx8ueg.cloudfront.net/finder-au/wp-uploads/2017/04/portal.jpg");
+                
+            }
+            #h1
+            {
+                color:#35C9DD;
+                text-shadow: 2px 1px #97ce4c;
+            }
+    
+            #btn {
+                background-color: #35C9DD;
+            }
+
+            .Q
+            {
+                color:white;
+            }
+    .modal-body{
+        background-image: url("https://hackadaycom.files.wordpress.com/2018/08/portal.png?w=800&zoom=2");
+    }
+        </style>
+    
+
+    <script type="text/javascript">
+        showForm();
+        function btn() {
+            $("#goBack").show();
+            $("#submitQuiz").show();
+            $("#quiz").show();
+            $("#form").hide();
+            $("#btn").hide();
+        }
+        function showForm() {
+            $("#goBack").hide();
+            $("#submitQuiz").hide();
+            $("#quiz").hide();
+            $("#form").show();
+            $("#btn").show();
+        }
+        $("#btn").on("click", function () {
+            if ($("#name").val() == "" || $("#photoUrl").val() == "") {
+                alert("Enter your name and image URL");
+            }
+            else {
+                btn();
+            }            
+        });
+        $("#goBack").on("click", function () {
+            showForm();
+        })
+        $("#submitQuiz").on("click", function () {
+            event.preventDefault();
+            var newFriend = {
+                name: $("#name").val(),
+                scores: [
+                    parseInt($("#question1").val()),
+                    parseInt($("#question2").val()),
+                    parseInt($("#question3").val()),
+                    parseInt($("#question4").val()),
+                    parseInt($("#question5").val()),
+                    parseInt($("#question6").val()),
+                    parseInt($("#question7").val()),
+                    parseInt($("#question8").val()),
+                    parseInt($("#question9").val()),
+                    parseInt($("#question10").val()),
+                ],
+            }
+         
+            $.post("/api/friends", newFriend)
+                .then(function (data) {
+                    $(".modal-body").html("<p>" + data.matchName + " is your new bff</p><br><img src='" + data.matchUrl + "' height='250' width='250px'>");
+                    $(".modal").modal("toggle");
+                    $(".form-control").val("");
+                    showForm();
+                })
+        })
+    </script>
+
+</body>
+
+</html>
